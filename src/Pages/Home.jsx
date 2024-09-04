@@ -22,6 +22,7 @@ const Home = () => {
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode); 
+    localStorage.setItem('darkMode',!darkMode);
   };
  const images = [
   {
@@ -37,7 +38,9 @@ const Home = () => {
   }
  ]
   useEffect(() => {
-    if (darkMode) {
+    const savedDarkMode = localStorage.getItem('darkMode') === 'true';
+    setDarkMode(savedDarkMode);
+    if (savedDarkMode) {
       document.documentElement.classList.add('dark');
     } else {
       document.documentElement.classList.remove('dark');
