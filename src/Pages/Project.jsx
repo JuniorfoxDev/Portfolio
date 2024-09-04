@@ -9,10 +9,11 @@ const Project = () => {
     <div className="h-[100vh] px-4 md:px-40 py-5 text-white">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 items-center justify-items-center">
         <div className="bg-white text-black p-6 rounded-2xl h-fit w-fit flex gap-4 flex-col shadow hover:shadow-xl">
-          <div className="rounded-xl bg-white p-2 h-[250px] w-[250px] md:w-[450px]" style={{
+          <div className="rounded-xl bg-white  h-[200px] md:h-[250px] w-[250px] md:w-[450px]" style={{
             backgroundImage: `url('https://devakshay.vercel.app/assets/img/swiftrevel.webp')`,
             backgroundPosition: 'center',
             backgroundSize: 'contain',
+            backgroundRepeat:'no-repeat'
           }}></div>
           <h2 className="font-poppins px-2 text-2xl font-medium">Project Name</h2>
           <div className="flex gap-4 px-2">
