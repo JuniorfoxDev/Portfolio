@@ -1,0 +1,62 @@
+import React from 'react';
+
+const MyCustomGrid = () => {
+  return (
+    <div className="grid grid-cols-4 gap-4 p-4">
+      {/* Profile Information */}
+      <div className="col-span-2 bg-white p-4 rounded shadow">
+        <div className="flex items-center">
+          <img 
+            src="https://via.placeholder.com/50" 
+            alt="Profile" 
+            className="rounded-full mr-4"
+          />
+          <p>
+            I’m <strong>Akshay</strong>, an enthusiastic Software developer from Kerala, India. I’m 
+            passionate about PHP, Laravel, Tailwind CSS, technology, and music, and I’m dedicated to using my skills to create impactful solutions.
+          </p>
+        </div>
+      </div>
+
+      {/* Map Widget */}
+      <div className="col-span-1 bg-white p-4 rounded shadow">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.654051528292!2d76.28368231538244!3d10.850516792271493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85b7b5a2a7b45%3A0x70495bd328f8c8a!2sKozhikode%2C%20Kerala%2C%20India!5e0!3m2!1sen!2sus!4v1635912900125!5m2!1sen!2sus" 
+          width="100%" 
+          height="150" 
+          style={{ border: 0 }} 
+          allowFullScreen="" 
+          loading="lazy" 
+          title="Kozhikode Map"
+        ></iframe>
+      </div>
+
+      {/* Technologies Used */}
+      <div className="col-span-1 bg-white p-4 rounded shadow">
+        <div className="grid grid-cols-3 gap-2">
+          <img src="https://via.placeholder.com/50" alt="Tech 1" className="rounded" />
+          <img src="https://via.placeholder.com/50" alt="Tech 2" className="rounded" />
+          <img src="https://via.placeholder.com/50" alt="Tech 3" className="rounded" />
+          <img src="https://via.placeholder.com/50" alt="Tech 4" className="rounded" />
+          <img src="https://via.placeholder.com/50" alt="Tech 5" className="rounded" />
+          <img src="https://via.placeholder.com/50" alt="Tech 6" className="rounded" />
+        </div>
+      </div>
+
+      {/* Bottom Widgets */}
+      <div className="col-span-1 bg-white p-4 rounded shadow">
+        <div className="bg-yellow-100 p-2 rounded-full w-10 h-10 flex items-center justify-center">
+          <span className="block bg-yellow-500 w-4 h-4 rounded-full"></span>
+        </div>
+      </div>
+      <div className="col-span-1 bg-gradient-to-r from-yellow-400 to-pink-500 p-4 rounded shadow flex items-center justify-center">
+        <img src="https://via.placeholder.com/50" alt="Instagram" className="rounded-full" />
+      </div>
+      <div className="col-span-1 bg-white p-4 rounded shadow">
+        <img src="https://via.placeholder.com/150" alt="Project" className="rounded" />
+      </div>
+    </div>
+  );
+};
+
+export default MyCustomGrid;
