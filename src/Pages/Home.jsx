@@ -50,7 +50,7 @@ const Home = () => {
           <div className="rounded-2xl bg-white p-6 shadow hover:shadow-xl">
             <div className="flex items-center flex-col md:flex-row ">
               <img src={img1} alt="" className="w-[140px] " />
-              <p className="text-base font-poppins text-wrap">I&#39;m <strong>Vaibhav</strong>, An enthusiastic Software Developer from Nagpur, India, with a strong passion for Full Stack Development. With hands-on experience in developing impactful solutions, I am dedicated to leveraging my skills to drive innovation and deliver high-quality results.</p>
+              <p className="text-base font-poppins text-wrap">I&#39;m <strong>Vaibhav</strong>, An enthusiastic Software Developer from Nagpur, India. with a strong passion for Full Stack Development. With hands-on experience in developing impactful solutions, I am dedicated to leveraging my skills to drive innovation and deliver high-quality results.</p>
             </div>
           </div>
         </div>
