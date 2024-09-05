@@ -10,6 +10,9 @@ export default {
         poppins: ['Poppins','system-ui'],
         sevillo: ["Sevillana", 'cursive'],
       },
+      placeholderColor: {
+        'tomato': '#ff6347',
+              },
       backgroundImage : {
         'nav-text':'linear-gradient(115deg, #0c0014, #117aca)',
         'box-text': 'linear-gradient(115deg, #3c8ce7, #00eaff)',
@@ -17,6 +20,7 @@ export default {
         'ab-text': 'linear-gradient(115deg, #fab2ff, #1904e5)',
         'card-border':'linear-gradient(115deg, #5efce8, #736efe)',
         'a-text': 'linear-gradient(115deg, #004ff9, #000000)',
+        'contact-bg': 'linear-gradient(115deg, #a7d5f2, #efc6ff)',
       },
       backgroundClip : {
         'text' : 'text',
