@@ -30,7 +30,7 @@ const Navbar = () => {
     return (
         <div className={` ${isScrolled ? 'bg-transparent backdrop-filter z-40 backdrop-blur-sm' : 'bg-[#F7F2F2]' }  transition-all duration-300 sticky top-0 flex items-center justify-around py-4`}>
             <NavLink to='/' className="font-sevillo text-3xl bg-nav-text bg-clip-text text-transparent"  onClick={toggleMobileMenu}>{text}</NavLink>
-            <div className="hidden md:flex gap-4">
+            <div className="hidden md:flex gap-4 uppercase">
                 <NavLink to='/' className={({ isActive }) => isActive ? "text-blue-500 font-poppins text-base" : "font-poppins text-base"}>Profile</NavLink>
                 <NavLink to='/About' className={({ isActive }) => isActive ? "text-blue-500 font-poppins text-base" : "font-poppins text-base"}>About</NavLink>
                 <NavLink to='/Skills' className={({ isActive }) => isActive ? "text-blue-500 font-poppins text-base" : "font-poppins text-base"}>Skills</NavLink>
@@ -43,7 +43,7 @@ const Navbar = () => {
                 </button>
             </div>
             {isMobileOpen && (
-                <div className="flex flex-col items-center absolute top-16 left-0  w-full  bg-[#F2F2F2] p-4 md:hidden">
+                <div className="flex flex-col items-center absolute top-16 left-0  w-full  bg-[#F2F2F2] p-4 md:hidden uppercase">
                     <NavLink to='/' className={({ isActive }) => isActive ? "text-blue-500 py-2" : "font-poppins text-2xl py-2"} onClick={toggleMobileMenu}>Profile</NavLink>
                     <NavLink to='/About' className={({ isActive }) => isActive ? "text-blue-500 py-2" : "font-poppins text-2xl py-2"} onClick={toggleMobileMenu}>About</NavLink>
                     <NavLink to='/Skills' className={({ isActive }) => isActive ? "text-blue-500 py-2" : "font-poppins text-2xl py-2"} onClick={toggleMobileMenu}>Skills</NavLink>
