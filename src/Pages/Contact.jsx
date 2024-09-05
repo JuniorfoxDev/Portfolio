@@ -26,9 +26,9 @@ const Contact = () => {
      });
   }
   return (
-    <div className="h-[100vh] px-4 md:px-40 py-5 text-white">
-      <div className="bg-contact-bg p-2 w-full h-full rounded-2xl">
-        <div className="py-4 md:py-16 px-20">
+    <div className="h-[100vh] px-6 md:px-40 py-5 text-white">
+      <div className="bg-contact-bg p-4 w-full h-full rounded-2xl">
+        <div className="py-4 md:py-16 px-4 md:px-20">
           <div>
           <h2 className="font-poppins font-bold text-6xl text-black">Hello ! Let's Talk</h2>
           <p className="py-4 font-poppins font-medium text-base md:text-xl text-gray-800/[0.8]">Fill the form to contact me or send mail to <Link className="bg-a-text text-transparent bg-clip-text font-bold hover:border-b-2 border-a-text">vaibhavmeshram2908@gmail.com</Link></p>
