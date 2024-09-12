@@ -60,7 +60,7 @@ const Home = () => {
         <div className="col-span-1">
           <div className="rounded-2xl h-[200px] bg-box-text p-4  relative shadow overflow-hidden hover:shadow-xl grayscale hover:grayscale-0" style={
             { 
-              backgroundImage: "url('https://www.alvalens.my.id/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprojects.8ae8395e.png&w=1920&q=75')",
+              backgroundImage: "url('https://images.ui8.net/res/robot/image/upload/iir1ulncnejy0ehcak47/1502284824.jpg')",
               backgroundSize: "cover",
               backgroundPosition: "center",
               }}>

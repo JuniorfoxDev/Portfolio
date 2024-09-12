@@ -28,7 +28,7 @@ const Navbar = () => {
         return () => window.removeEventListener('scroll',handleScroll);
     },[])
     return (
-        <div className={` ${isScrolled ? 'bg-transparent backdrop-filter z-40 backdrop-blur-sm' : 'bg-[#F7F2F2]' }  transition-all duration-300 sticky top-0 flex items-center justify-around py-4`}>
+        <div className={` ${isScrolled ? 'bg-transparent backdrop-filter z-40 backdrop-blur-sm text-gray-400' : 'bg-[#F7F2F2]' }  transition-all duration-300 sticky top-0 flex items-center justify-around py-4`}>
             <NavLink to='/' className="font-sevillo text-3xl bg-nav-text bg-clip-text text-transparent"  onClick={toggleMobileMenu}>{text}</NavLink>
             <div className="hidden md:flex gap-4 uppercase">
                 <NavLink to='/' className={({ isActive }) => isActive ? "text-blue-500 font-poppins text-base" : "font-poppins text-base"}>Profile</NavLink>
