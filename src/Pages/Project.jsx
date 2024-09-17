@@ -1,76 +1,37 @@
-import { FaReact } from "react-icons/fa";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { SiJavascript } from "react-icons/si";
-import { SiMongodb } from "react-icons/si";
-import { Link } from "react-router-dom";
 import { GoArrowUpRight } from "react-icons/go";
-import { data } from "autoprefixer";
+import { useEffect, useState } from "react";
+import axios from "axios";
 const Project = () => {
-  const project = [
-    {
-      heading: 'Marks Chocolate',
-      subHeading: 'We Explore avatars that deviate from human form',
-      image:'https://flexplate.netlify.app/mogen/assets/images/projects/03.jpg'
-    },
-    {
-      heading: 'Marks Chocolate',
-      subHeading: 'We Explore avatars that deviate from human form',
-      image:'https://flexplate.netlify.app/mogen/assets/images/projects/03.jpg'
-    },
-    {
-      heading: 'Marks Chocolate',
-      subHeading: 'We Explore avatars that deviate from human form',
-      image:'https://flexplate.netlify.app/mogen/assets/images/projects/03.jpg'
-    },
-    {
-      heading: 'Marks Chocolate',
-      subHeading: 'We Explore avatars that deviate from human form',
-      image:'https://flexplate.netlify.app/mogen/assets/images/projects/03.jpg'
-    },
-    {
-      heading: 'Marks Chocolate',
-      subHeading: 'We Explore avatars that deviate from human form',
-      image:'https://flexplate.netlify.app/mogen/assets/images/projects/03.jpg'
-    },
-    {
-      heading: 'Marks Chocolate',
-      subHeading: 'We Explore avatars that deviate from human form',
-      image:'https://flexplate.netlify.app/mogen/assets/images/projects/03.jpg'
-    },
-    {
-      heading: 'Marks Chocolate',
-      subHeading: 'We Explore avatars that deviate from human form',
-      image:'https://flexplate.netlify.app/mogen/assets/images/projects/03.jpg'
-    },
-    {
-      heading: 'Marks Chocolate',
-      subHeading: 'We Explore avatars that deviate from human form',
-      image:'https://flexplate.netlify.app/mogen/assets/images/projects/03.jpg'
-    },
-    {
-      heading: 'Marks Chocolate',
-      subHeading: 'We Explore avatars that deviate from human form',
-      image:'https://flexplate.netlify.app/mogen/assets/images/projects/03.jpg'
-    },
-  ];
+  const [projects,setProjects] = useState([]);
+  useEffect(() => {
+    const fetchProjects = async () => {
+      try {
+        const response = await axios.get('https://portfolio-server-vaibhav.vercel.app/projects');
+        setProjects(response.data);
+      } catch (error) {
+        console.log(error)
+      }
+    }
+    fetchProjects()
+  },[])
   return (
     <div className="h-auto px-4  py-5 text-white bg-black/[0.2]">
-        <div className="grid grid-cols-1 mx-4  md:grid-cols-3 md:mx-32 gap-4 ">
-          {project.map((item,index)=> (
-            <div key={index} className="bg-white h-fit px-4 py-5 rounded-3xl text-black flex flex-col gap-5">
-              <div className="relative overflow-hidden rounded-3xl">
-                <img src={item.image} alt="" className="h-auto w-auto rounded-3xl transform object-cover transition-transform duration-200 hover:scale-125"/>
-              </div>
-              <div>
-                <h2 className="font-poppins text-3xl font-semibold px-1">{item.heading}</h2>
-                <div className="flex items-center justify-between px-1 py-2  ">
-                <p className="font-poppins text-base">{item.subHeading}</p>
-                <Link className="hover:bg-black p-3 hover:rounded-full text-center hover:text-white"><GoArrowUpRight className="text-2xl  font-poppins font-bold "/> </Link>
-                </div>
-              </div>
+        <div className='grid grid-cols-1 lg:grid-cols-3 gap-3 py-6'>
+       {projects.map((project) => ( 
+        <div key={project._id} className="bg-blue-100 h-fit px-4 py-6 rounded-3xl text-black flex flex-col gap-5">
+          <div className="relative overflow-hidden rounded-3xl">
+            <img src={project.image} alt="" className="h-auto w-auto rounded-3xl transform object-cover transition-transform duration-200 hover:scale-125" />
+          </div>
+          <div>
+            <h2 className="font-poppins text-3xl font-semibold ">{project.name}</h2>
+            <div className="flex items-center justify-between">
+              <p className="font-poppins font-medium text-lg">{project.description}</p>
+              <a href={project.link} target='_blank'  className="hover:bg-black p-3 hover:rounded-full text-center hover:text-white"><GoArrowUpRight className="text-2xl  font-poppins font-bold " /> </a>
             </div>
-            ))}
+          </div>
         </div>
+        ))}
+      </div>
     </div>
   )
 }
