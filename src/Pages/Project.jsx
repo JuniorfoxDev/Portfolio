@@ -18,7 +18,7 @@ const Project = () => {
     <div className="h-auto px-4  py-5 text-white bg-black/[0.2]">
         <div className='grid grid-cols-1 lg:grid-cols-3 gap-3 py-6'>
        {projects.map((project) => ( 
-        <div key={project._id} className="bg-blue-100 h-fit px-4 py-6 rounded-3xl text-black flex flex-col gap-5">
+        <div key={project._id} className="bg-white h-fit px-4 py-6 rounded-3xl text-black flex flex-col gap-5">
           <div className="relative overflow-hidden rounded-3xl">
             <img src={project.image} alt="" className="h-auto w-auto rounded-3xl transform object-cover transition-transform duration-200 hover:scale-125" />
           </div>
