@@ -4,6 +4,7 @@ import celeb from '../assets/celeb.png'
 import { GoArrowUpRight } from "react-icons/go";
 import { FaReact } from "react-icons/fa";
 import { DiNodejs } from "react-icons/di";
+import { FaSalesforce } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiJavascript } from "react-icons/si";
 import { SiNextdotjs } from "react-icons/si";
@@ -16,6 +17,7 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { useEffect, useState } from "react";
 import {SunIcon} from './Icons/SunIcon'
+import { FaAngular } from "react-icons/fa";
 import {MoonIcon} from './Icons/MoonIcon'
 const Home = () => {
   const [darkMode, setDarkMode] = useState(false); 
@@ -71,10 +73,10 @@ const Home = () => {
         </div>
         <div className="col-span-1 row-span-4">
           <div className="rounded-2xl hover:shadow-xl bg-white p-4 pb-10 relative" style={{
-            backgroundImage: `url('https://devakshay.vercel.app/media/Topographic-EZTJWYCO.svg')`,
+            // backgroundImage: `url('https://devakshay.vercel.app/media/Topographic-EZTJWYCO.svg')`,
             backgroundPosition: 'center',
           }}>
-            <div className="h-[500px] grid grid-cols-2 gap-4 items-center justify-items-center">
+            <div className="h-[650px] grid grid-cols-2 gap-4 items-center justify-items-center">
               <FaReact size={55} className="hover:text-blue-900"/>
               <DiNodejs size={55} className="hover:text-blue-900" />
               <RiTailwindCssFill size={55} className="hover:text-blue-900" />
@@ -85,12 +87,14 @@ const Home = () => {
               <VscGithubInverted size={55} className="hover:text-blue-900" />
               <FaHtml5 size={55} className="hover:text-blue-900" />
               <FaCss3Alt size={55} className="hover:text-blue-900" />
+              <FaSalesforce size={55} className="hover:text-blue-900" />
+              <FaAngular size={55} className="hover:text-blue-900"/>
             </div>
             <Link to='/skills' className="bg-white p-2 rounded-full border-gray-300 hover:border-4 border-2 absolute bottom-1 left-4"><GoArrowUpRight size={24} /> </Link>
           </div>
         </div>
         <div className="col-span-1" >
-          <div className="rounded-2xl  overflow-hidden ">
+          <div className="rounded-3xl  overflow-hidden ">
             <Carousel showThumbs={false} showStatus={false} infiniteLoop autoPlay interval={3000} transitionTime={1000} showIndicators={false} showArrows={false}>
             {images.map((image,index) => (
               <Link to={image.url} key={index}>
@@ -101,7 +105,7 @@ const Home = () => {
           </div>
         </div>
         <div className="col-span-1 ">
-          <div className="rounded-2xl hover:shadow-xl bg-white p-4 pb-10 relative h-[180px] md:h-full" style={{
+          <div className="rounded-3xl hover:shadow-xl bg-white p-4 pb-10 relative h-[180px] md:h-full" style={{
             backgroundImage: `url('https://i.pinimg.com/736x/b5/1b/78/b51b78ecc9e5711274931774e433b5e6.jpg')`,
             backgroundPosition: 'center',
             backgroundSize:'cover',
@@ -122,6 +126,9 @@ const Home = () => {
         <div className="md:col-span-3">
           <div className="rounded-2xl relative bg-white p-4 md:p-6 h-[280px] overflow-hidden">
             <div className="w-80 h-80 bg-blue-400/[0.6] rounded-full absolute -right-28 -top-32"></div>
+            <div>
+              
+            </div>
             <div className="relative">
               <img src={celeb} alt="" className="md:w-[100px] md:h-[100px] w-[120px] h-[120px] " />
             </div>

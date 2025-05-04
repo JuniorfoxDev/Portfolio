@@ -9,6 +9,9 @@ export default {
       fontFamily : {
         poppins: ['Poppins','system-ui'],
         sevillo: ["Sevillana", 'cursive'],
+        bebas: ["Bebas Neue", 'sans-serif'],
+        cinzel: ["Cinzel", 'serif'],
+        overpass: ["Overpass", 'sans-serif'],
       },
       placeholderColor: {
         'tomato': '#ff6347',
