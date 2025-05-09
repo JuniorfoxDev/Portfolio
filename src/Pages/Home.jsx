@@ -20,7 +20,10 @@ import {SunIcon} from './Icons/SunIcon'
 import { FaAngular } from "react-icons/fa";
 import {MoonIcon} from './Icons/MoonIcon'
 const Home = () => {
-  const [darkMode, setDarkMode] = useState(false); 
+  const [darkMode, setDarkMode] = useState(() => {
+    const saved = localStorage.getItem('darkMode');
+    return saved === null ? true : saved === 'true';
+  }); 
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode); 
@@ -40,13 +43,12 @@ const Home = () => {
   }
  ]
   useEffect(() => {
-    const savedDarkMode = localStorage.getItem('darkMode') === 'true';
-    setDarkMode(savedDarkMode);
-    if (savedDarkMode) {
+    if (darkMode) {
       document.documentElement.classList.add('dark');
     } else {
       document.documentElement.classList.remove('dark');
     }
+    localStorage.setItem('darkMode', darkMode);
   }, [darkMode]);
   return (
     <div className={`h-[100vh] px-4 md:px-40 py-5`}>
