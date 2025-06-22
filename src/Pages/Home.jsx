@@ -92,7 +92,7 @@ const Home = () => {
               <FaSalesforce size={55} className="hover:text-blue-900" />
               <FaAngular size={55} className="hover:text-blue-900"/>
             </div>
-            <Link to='/skills' className="bg-white p-2 rounded-full border-gray-300 hover:border-4 border-2 absolute bottom-1 left-4"><GoArrowUpRight size={24} /> </Link>
+            {/* <Link to='/skills' className="bg-white p-2 rounded-full border-gray-300 hover:border-4 border-2 absolute bottom-1 left-4"><GoArrowUpRight size={24} /> </Link> */}
           </div>
         </div>
         <div className="col-span-1" >
@@ -135,10 +135,10 @@ const Home = () => {
               <img src={celeb} alt="" className="md:w-[100px] md:h-[100px] w-[120px] h-[120px] " />
             </div>
             <div className="relative">
-              <h2 className="px-2 md:px-16 md:py-4 text-3xl md:text-4xl font-poppins font-bold">Get In Touch</h2>
+              <h2 className="px-2 md:px-16 md:py-2 text-3xl md:text-4xl font-poppins font-bold">Get In Touch</h2>
             </div>
             <div className="relative">
-              <h4 className="md:px-16 px-2 py-2 text-gray-700 font-poppins font-medium text-xs">Contact : Vaibhavmeshram2908@gmail.com</h4>
+              <h4 className="md:px-16 px-2 py-1 text-gray-700 font-poppins font-medium text-xs">Contact : Vaibhavmeshram2908@gmail.com</h4>
             </div>
             <Link to='/contact' className="bg-gray-300 w-12 h-12 rounded-full p-2 flex items-center justify-center absolute hover:border-4 border-gray-100"><GoArrowUpRight size={24} /></Link>
           </div>

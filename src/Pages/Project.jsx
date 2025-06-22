@@ -69,8 +69,8 @@ const Project = () => {
                 <button onClick={() => setDetailsModel(null)} className="absolute top-2 right-2 text-slate-400 hover:text-slate-200">
                   <IoClose size={24} />
                 </button>
-                <h1 className="text-lg text-slate-50 py-2">{detailsModel.name}</h1>
-                <h2 className="text-sm text-slate-300 py-4">{detailsModel.description}</h2>
+                <h1 className="text-lg text-slate-50 pt-4 pb-2">{detailsModel.name}</h1>
+                <h2 className="text-sm text-slate-300 p-2">{detailsModel.description}</h2>
               </div>
             </div>
           )}
