@@ -92,7 +92,7 @@ const Home = () => {
               <FaSalesforce size={55} className="hover:text-blue-900" />
               <FaAngular size={55} className="hover:text-blue-900"/>
             </div>
-            {/* <Link to='/skills' className="bg-white p-2 rounded-full border-gray-300 hover:border-4 border-2 absolute bottom-1 left-4"><GoArrowUpRight size={24} /> </Link> */}
+            <Link to='/skills' className="bg-white p-2 rounded-full border-gray-300 hover:border-4 border-2 absolute bottom-1 left-4"><GoArrowUpRight size={24} /> </Link>
           </div>
         </div>
         <div className="col-span-1" >

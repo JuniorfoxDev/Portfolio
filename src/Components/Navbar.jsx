@@ -36,7 +36,7 @@ const Navbar = () => {
             <div className="hidden md:flex gap-4 uppercase">
                 {/* <NavLink to='/' className={({ isActive }) => isActive ? "text-blue-500 font-overpass text-base" : "font-overpass text-white text-base"}>Profile</NavLink> */}
                 <NavLink to='/About' className={({ isActive }) => isActive ? "text-blue-500 font-overpass text-base" : "font-overpass text-base"}>MY STORY</NavLink>
-                {/* <NavLink to='/Skills' className={({ isActive }) => isActive ? "text-blue-500 font-overpass text-base" : "font-overpass text-base"}>Skills</NavLink> */}
+                <NavLink to='/Skills' className={({ isActive }) => isActive ? "text-blue-500 font-overpass text-base" : "font-overpass text-base"}>Expertise</NavLink>
                 <NavLink to='/Projects' className={({ isActive }) => isActive ? "text-blue-500 font-overpass font-bold text-base" : "font-overpass text-base"}>Projects</NavLink>
                 <NavLink to='/Contact' className={({ isActive }) => isActive ? "text-blue-500 font-overpass font-bold text-base" : "font-overpass text-base"}>CONNECT</NavLink>
             </div>
@@ -49,10 +49,10 @@ const Navbar = () => {
             {isMobileOpen && (
                 <div className="flex flex-col items-center absolute top-12 left-0  w-full  bg-[#000] text-white p-4 md:hidden uppercase">
                     {/* <NavLink to='/' className={({ isActive }) => isActive ? "text-blue-500 py-2" : "font-poppins text-2xl py-2"} onClick={toggleMobileMenu}>Profile</NavLink> */}
-                    <NavLink to='/About' className={({ isActive }) => isActive ? "text-blue-500 py-2" : "font-poppins text-2xl py-2"} onClick={toggleMobileMenu}>About</NavLink>
-                    {/* <NavLink to='/Skills' className={({ isActive }) => isActive ? "text-blue-500 py-2" : "font-poppins text-2xl py-2"} onClick={toggleMobileMenu}>Skills</NavLink> */}
-                    <NavLink to='/Projects' className={({ isActive }) => isActive ? "text-blue-500 py-2" : "font-poppins text-2xl py-2"} onClick={toggleMobileMenu}>ShowCases</NavLink>
-                    <NavLink to='/Contact' className={({ isActive }) => isActive ? "text-blue-500 py-2" : "font-poppins text-2xl py-2"} onClick={toggleMobileMenu}>Contact</NavLink>
+                    <NavLink to='/About' className={({ isActive }) => isActive ? "text-blue-500 py-2" : "font-poppins text-2xl py-2"} onClick={toggleMobileMenu}>MY story</NavLink>
+                    <NavLink to='/Skills' className={({ isActive }) => isActive ? "text-blue-500 py-2" : "font-poppins text-2xl py-2"} onClick={toggleMobileMenu}>Expertise</NavLink>
+                    <NavLink to='/Projects' className={({ isActive }) => isActive ? "text-blue-500 py-2" : "font-poppins text-2xl py-2"} onClick={toggleMobileMenu}>Projects</NavLink>
+                    <NavLink to='/Contact' className={({ isActive }) => isActive ? "text-blue-500 py-2" : "font-poppins text-2xl py-2"} onClick={toggleMobileMenu}>Connect</NavLink>
                 </div>
             )}
         </div>
