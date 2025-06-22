@@ -37,7 +37,7 @@ const Navbar = () => {
                 <NavLink to='/' className={({ isActive }) => isActive ? "text-blue-500 font-overpass text-base" : "font-overpass text-white text-base"}>Profile</NavLink>
                 <NavLink to='/About' className={({ isActive }) => isActive ? "text-blue-500 font-overpass text-base" : "font-overpass text-base"}>About</NavLink>
                 <NavLink to='/Skills' className={({ isActive }) => isActive ? "text-blue-500 font-overpass text-base" : "font-overpass text-base"}>Skills</NavLink>
-                <NavLink to='/Projects' className={({ isActive }) => isActive ? "text-blue-500 font-overpass font-bold text-base" : "font-overpass text-base"}>ShowCases</NavLink>
+                <NavLink to='/Projects' className={({ isActive }) => isActive ? "text-blue-500 font-overpass font-bold text-base" : "font-overpass text-base"}>Projects</NavLink>
                 <NavLink to='/Contact' className={({ isActive }) => isActive ? "text-blue-500 font-overpass font-bold text-base" : "font-overpass text-base"}>Contact</NavLink>
             </div>
             <div className="md:hidden">
