@@ -32,7 +32,7 @@ const Project = () => {
           <ImSpinner className="animate-spin text-white text-5xl" />
         </div>
       ) : ( 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {projects.map((project) => (
             <div key={project._id} className="bg-[#1e293b] rounded-3xl shadow-lg w-84  overflow-hidden">
               <img src={project.image} alt={project.name} loading="lazy" className="object-cover w-full h-60 transform transition-transform duration-300 hover:scale-110" />
